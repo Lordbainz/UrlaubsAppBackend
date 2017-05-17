@@ -69,7 +69,7 @@ public abstract class AbstractFacade<T> {
     
     public List findFirstName(String name) {
         return getEntityManager().
-                createNamedQuery("Miarbeiter.findByFirstname").
+                createNamedQuery("Mitarbeiter.findByFirstname").
                 setParameter("firstname",name).getResultList();
     }
     
